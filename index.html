@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="weather-app">
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="Enter city name...">
+            <button id="search-btn">Search</button>
+        </div>
+        
+        <div class="weather-info">
+            <h2 id="city-name">Enter a city</h2>
+            <p id="date">--</p>
+            
+            <div class="temperature">
+                <span id="temp">--</span>
+                <span class="unit">°C</span>
+            </div>
+            
+            <div class="weather-description" id="description">--</div>
+            
+            <div class="weather-icon">
+                <img id="icon" src="" alt="Weather icon">
+            </div>
+        </div>
+        
+        <div class="details">
+            <div class="detail-item">
+                <span class="label">Humidity</span>
+                <span id="humidity" class="value">--%</span>
+            </div>
+            <div class="detail-item">
+                <span class="label">Wind Speed</span>
+                <span id="wind" class="value">-- km/h</span>
+            </div>
+            <div class="detail-item">
+                <span class="label">Feels Like</span>
+                <span id="feels-like" class="value">--°C</span>
+            </div>
+        </div>
+        
+        <div class="forecast" id="forecast">
+            <!-- 7-day forecast will be inserted here -->
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
